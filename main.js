@@ -56,7 +56,7 @@ function shodata() {
     }
 
     document.getElementById('tbody').innerHTML = tablee;
-    document.getElementById('totalQuantity').innerText = dataprob.reduce((sum, d) => sum + d.الكمية, 0);
+    document.getElementById('totalQuantity').innerText = dataprob.length;
     document.getElementById('totalPrice').innerText = total;
     document.getElementById('typeinfo1').innerText = `داخل: ${inCount}`;
     document.getElementById('typeinfo2').innerText = `خارج: ${outCount}`;
