@@ -763,6 +763,9 @@ document.querySelectorAll("[data-page]").forEach(btn => {
   });
 });
 
+function openFile() {
+  document.getElementById("importFile").click();
+}
 
 
 
