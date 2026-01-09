@@ -204,14 +204,12 @@
     <span>تصدير البيانات</span>
   </div>
 
-  <div class="nav-item">
-    <i class="fa-solid fa-file-import"></i>
-    <span>
-      <label for="importFile" style="cursor:pointer">استيراد البيانات</label>
-    </span>
-    <input type="file" id="importFile" hidden onchange="importData()">
+ <div class="nav-item" style="position: relative; transform: translate(0px, 0px) scale(1);">
+  <i class="fa-solid fa-file-import"></i>
+  <label for="importFile" >استيراد البيانات</label>
 
-  </div>
+  <input type="file" accept=".json,.csv" id="importFile" onchange="importData()" class="file-input" hidden>
+</div>
 
   <div class="nav-item logout" onclick="logoutt()">
     <i class="fa-solid fa-right-from-bracket"></i>
