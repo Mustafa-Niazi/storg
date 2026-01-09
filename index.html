@@ -139,19 +139,6 @@
     display: block;
   }
 }
-    .file-input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  opacity: 0;          /* شفاف */
-  cursor: pointer;
-
-  z-index: 10;         /* فوق كل حاجة */
-}
-
 
 </style>
 
@@ -222,13 +209,7 @@
     <span>
       <label for="importFile" style="cursor:pointer">استيراد البيانات</label>
     </span>
-    <input
-    type="file"
-    id="importFile"
-    onchange="importData()"
-    class="file-input"
-  >
-
+    <input type="file" id="importFile" hidden onchange="importData()">
 
   </div>
 
@@ -588,7 +569,4 @@ $(document).ready(function() {
 
 
 </body>
-
 </html>
-
-
