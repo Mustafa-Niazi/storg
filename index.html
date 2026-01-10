@@ -147,6 +147,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
 }
+   
+.nav-item  .file-input {
+  display: none;
+}
 }
 
 </style>
@@ -217,9 +221,9 @@
   <input type="file" accept=".json,.csv" id="importFile" onchange="importData()" class="file-input" >
 </div>
 
- <div class="nav-item" style="position: relative; transform: translate(0px, 0px) scale(1);">
+ <div class="nav-item" onclick="importDataa()" style="position: relative; transform: translate(0px, 0px) scale(1);">
   <i class="fa-solid fa-file-import"></i>
-  <span onclick="importDataa()" >استيراد البيانات</span>
+  <span  >استيراد البيانات</span>
 
 </div>
 
