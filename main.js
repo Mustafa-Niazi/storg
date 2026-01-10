@@ -669,7 +669,8 @@ reader.readAsText(file);
 
 
     function importDataa(){
-        document.getElementById('importFile').click();
+        document.getElementById('importFile');
+        openFile();
         // console.log(importFile)
     }
 
