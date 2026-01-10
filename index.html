@@ -123,6 +123,13 @@
 
 /* ===== موبايل ===== */
   @media (max-width:768px) {
+      .user::after{
+      content: "hello mustafa";
+      position: absolute;
+      color: rgb(255, 0, 242);
+      top: 100px;
+      left: auto;
+  }
   .side-nav {
     top: 0;
     height: 100%;
@@ -150,9 +157,7 @@
    
 
 }
-.nav-item  .file-input{
-  display: none;
-}
+
 </style>
 
  
@@ -216,14 +221,12 @@
     <i class="fa-solid fa-file-export"></i>
     <span>تصدير البيانات</span>
   </div>
-  <div class="nav-item" style="position: relative; transform: translate(0px, 0px) scale(1);">
  
-  <input type="file" accept=".json,.csv" id="importFile" onchange="importData()" class="file-input" >
-</div>
-
- <div class="nav-item" onclick="importDataa()" style="position: relative; transform: translate(0px, 0px) scale(1);">
-  <i class="fa-solid fa-file-import"></i>
-  <span  >استيراد البيانات</span>
+  
+  <div class="nav-item" onclick="importDataa()" id="filetese"  style="position: relative; transform: translate(0px, 0px) scale(1);">
+    <i class="fa-solid fa-file-import"></i>
+    <span  >استيراد البيانات</span>
+    <input type="file" accept=".json,.csv" id="importFile"  onchange="importData()" class="file-input" hidden >
 
 </div>
 
@@ -232,6 +235,7 @@
     <span>تسجيل الخروج</span>
   </div>
 </nav>
+
 
 
 
@@ -347,7 +351,7 @@
 
     <button onclick="exportData()">تصدير البيانات</button>
     
-    <input type="file" id="importFile" accept=".json">
+    <input type="file"  accept=".json">
     <button onclick="importData()">استيراد البيانات</button>
 
    

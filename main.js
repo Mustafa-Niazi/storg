@@ -667,10 +667,24 @@ reader.readAsText(file);
 
 
 
-let importFile = document.getElementById('importFile');
-function importDataa(){
-       importFile.click();
-    }
+
+function importDataa() {
+    let importFile = document.getElementById('importFile');
+    importFile.click();
+    // console.log('clicked');
+    // if (!filetese) {
+    //     console.log("عنصر الإدخال غير موجود!");
+    //     return; // نوقف التنفيذ لتجنب الخطأ
+    // }
+
+    // let file = filetese.files[0]; // أول ملف
+    // if (file) {
+    //     console.log("اسم الملف:", file.name);
+    // } else {
+    //     console.log("لم يتم اختيار أي ملف");
+    // }
+}
+
 
 
     
@@ -772,10 +786,6 @@ document.querySelectorAll("[data-page]").forEach(btn => {
     nav.classList.remove("active");
   });
 });
-
-function openFile() {
-  document.getElementById("importFile").click();
-}
 
 
 
