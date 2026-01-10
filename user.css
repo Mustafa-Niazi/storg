@@ -1,7 +1,8 @@
   /* From Uiverse.io by shadyeljokers */
 
   .user{
-
+    
+     position: relative;
       background: #1f293a;
       display: flex;
       justify-content: center;
@@ -9,10 +10,15 @@
       height: 100vh;
       align-content: center;
       align-items: center;
-
-      
-     
   }
+   .user::after{
+      content: "hello mustafa";
+      position: absolute;
+      color: #0ef;
+      top: 25%;
+      left: 47%;
+  }
+
 
   .user .container {
       

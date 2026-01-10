@@ -8,9 +8,10 @@
     let sidenav=document.getElementById('side-nav');
     let dashboard=document.getElementById('dashboard');
     let dashboardd=document.getElementById('dashboardd');
+    let navtoggle=document.getElementById('nav-toggle');
    function submitt(){
     if(email.value=='0'&&password.value=='0'){
-      
+       navtoggle.style.display='block';
            user.style.display = 'none';
 
     // إظهار الناف
@@ -71,8 +72,11 @@ function logoutt() {
   // إخفاء كل الصفحات
   document.querySelectorAll(".page")
     .forEach(p => p.classList.remove("show"));
-     document.querySelectorAll(".nav-item")
+    document.querySelectorAll(".nav-item")
+    document.querySelectorAll(".side-nav")
     .forEach(p => p.classList.remove("active"));
+    navtoggle.style.display='none';
+    
 
   // رجوع للداشبورد
   

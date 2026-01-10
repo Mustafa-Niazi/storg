@@ -663,6 +663,17 @@ function importData() {
 reader.readAsText(file);
  updateTable()
 }
+
+
+
+
+
+    function importDataa(){
+        document.getElementById('importFile').click();
+        // console.log(importFile)
+    }
+
+
     
 function updateTable() {
     // أولاً نعرض الجدول العادي

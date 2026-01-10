@@ -2,6 +2,7 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Store System</title>
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
@@ -118,25 +119,28 @@
   cursor: pointer;
 }
 
+
+
 /* ===== موبايل ===== */
-@media (max-width:768px) {
+  @media (max-width:768px) {
   .side-nav {
     top: 0;
     height: 100%;
     transform: none;
     border-radius: 0;
-    width: 0;
-    padding: 0;
+    width: 80px;
+     padding: 55px 15px;
     overflow: hidden;
+   
   }
 
   .side-nav.active {
     width: 230px;
-    padding: 15px;
+    padding: 55px 15px;
   }
 
   .nav-toggle {
-    display: block;
+    display: none;
   }
 }
 
@@ -173,7 +177,7 @@
 
 <!-- زر الموبايل -->
 <!-- زر الموبايل -->
-<div class="nav-toggle">
+<div class="nav-toggle" id="nav-toggle">
   <i class="fa-solid fa-bars"></i>
 </div>
 
@@ -203,12 +207,15 @@
     <i class="fa-solid fa-file-export"></i>
     <span>تصدير البيانات</span>
   </div>
+  <div class="nav-item" style="position: relative; transform: translate(0px, 0px) scale(1);">
+ 
+  <input type="file" accept=".json,.csv" id="importFile" onchange="importData()" class="file-input" >
+</div>
 
  <div class="nav-item" style="position: relative; transform: translate(0px, 0px) scale(1);">
   <i class="fa-solid fa-file-import"></i>
-  <label for="importFile" >استيراد البيانات</label>
+  <span onclick="importDataa()" >استيراد البيانات</span>
 
-  <input type="file" accept=".json,.csv" id="importFile" onchange="importData()" class="file-input" >
 </div>
 
   <div class="nav-item logout" onclick="logoutt()">
