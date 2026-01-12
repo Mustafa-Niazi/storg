@@ -168,10 +168,17 @@ function checkStock(code, qty) {
 
     shodata();       // إعادة عرض الجدول
     updateTable();   // إعادة تهيئة DataTable
+cleard();
     $('#myTable').DataTable().page(currentPage).draw(false); // العودة للصفحة الحالية
 }
   
-
+function cleard(){
+    datepicker.value=''
+    الاسم.value=''
+    الكمية.value=''
+    الكود.value=''
+    خارج.value=''
+}
 
  
 function deleteItem(index) {
