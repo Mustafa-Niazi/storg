@@ -14,7 +14,7 @@
    .user::after{
       content: "hello mustafa";
       position: absolute;
-    color: rgb(115, 255, 0);
+    color: blue;
       top: 20%;
       left: auto;
   }
