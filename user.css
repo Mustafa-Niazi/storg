@@ -14,7 +14,7 @@
    .user::after{
       content: "hello mustafa";
       position: absolute;
-      color: #0ef;
+    color: rgb(115, 255, 0);
       top: 20%;
       left: auto;
   }
@@ -154,3 +154,4 @@
     text-decoration: none;
     font-weight: 600;
   }
+
