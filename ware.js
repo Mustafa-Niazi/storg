@@ -13,6 +13,7 @@ function showInTable(tyep) {
             grouped[code] = {
                 datepicker: item.datepicker,
                الاسم: item.الاسم,
+               المسمي: item.المسمي,
                 الكود: code,
                 داخل: 0,
                 خارج: 0,
@@ -36,7 +37,7 @@ function showInTable(tyep) {
         <tr>
             <td>${item.datepicker}</td>
             <td>${item.الكود}</td>
-            <td>${item.الاسم}</td>
+         <td>${item.المسمي}</td>
             <td>${balance}</td>
             <td>داخل: ${item.داخل}, خارج: ${item.خارج}, الرصيد: ${balance}</td>
             <td>
