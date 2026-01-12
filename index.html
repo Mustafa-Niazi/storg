@@ -123,11 +123,24 @@
 
 /* ===== موبايل ===== */
   @media (max-width:768px) {
+    .inputs {
+    width: 768px;
+    height: 100px;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;}
+    .page {width: 768px}
     #myTable_filter {
     position: absolute;
-    top: -378px;
+    top: -410px;
     left: 0;
 }
+ 
+
       .activei {
   display: block;
 }
@@ -137,7 +150,7 @@
       .user::after{
       content: "hello mustafa";
       position: absolute;
-      color:#ffffff;
+      color: rgb(0, 255, 85);
       top: 100px;
       left: auto;
   }
@@ -376,6 +389,14 @@
       <div class="inputmain"><label for="الاسم">الاسم</label>
           <input type="text" placeholder=" الاسم " id="الاسم">
       </div>
+     
+
+      
+    
+   
+    </div>
+       <div class="inputs">
+
       <div class="inputmain"><label for="الكود">الكود</label>
          <input type="text" id="الكود" list="codeLists" 
       placeholder="اكتب أو اختر الكود">
@@ -615,5 +636,4 @@ $(document).ready(function() {
 
 </body>
 </html>
-
 
