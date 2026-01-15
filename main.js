@@ -115,7 +115,7 @@ function checkStock(code, qty) {
  function handleAddOrUpdate(tyep) {
     let qty = Number(الكمية.value) || 1;
 
-    if (!datepicker.value || !الاسم.value || !الكود.value)
+    if (!datepicker.value || !الكود.value)
         return alert("اكمل كل البيانات!");
 
     // التحقق قبل إضافة "خارج"
